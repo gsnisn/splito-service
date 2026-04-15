@@ -162,6 +162,13 @@
 
 	</dependencies>
 
+	<repositories>
+		<repository>
+			<id>nexus-repo</id>
+			<url>http://nexus:8081/repository/maven-releases/</url>
+		</repository>
+	</repositories>
+
 	<build>
 		<plugins>
 			<plugin>
