@@ -27,4 +27,5 @@ public class CreateDirectExpenseRequest {
 
     @Valid
     private List<CreateExpenseRequest.SplitShare> exactSplits;
+
 }
