@@ -1,12 +1,14 @@
-FROM maven:3.9-eclipse-temurin-17 AS build
-WORKDIR /app
-COPY pom.xml .
-COPY src ./src
-RUN mvn -DskipTests package
+# Use lightweight Java 17 image
+FROM eclipse-temurin:17-jdk-alpine
 
-FROM eclipse-temurin:17-jre
+# Set working directory
 WORKDIR /app
-COPY --from=build /app/target/*.jar app.jar
+
+# Copy jar file
+COPY target/splito-*.jar app.jar
+
+# Expose port (change if needed)
 EXPOSE 8080
-ENV SERVER_PORT=8080
-ENTRYPOINT ["java","-jar","/app/app.jar"]
+
+# Run application
+ENTRYPOINT ["java", "-jar", "app.jar"]
