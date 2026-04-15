@@ -16,16 +16,14 @@ pipeline {
         stage('Get Version') {
             steps {
                 script {
-                    VERSION = sh(
+                    def VERSION = sh(
                         script: "mvn help:evaluate -Dexpression=project.version -q -DforceStdout | grep -v '\\[INFO\\]'",
                         returnStdout: true
                     ).trim()
 
-                    if (!VERSION) {
-                        error("VERSION is empty! Check pom.xml")
-                    }
+                    env.VERSION = VERSION
 
-                    echo "Project version: ${VERSION}"
+                    echo "Project version: ${env.VERSION}"
                 }
             }
         }
