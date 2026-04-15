@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'maven-3'
+    }
+
     environment {
         AWS_REGION = 'ap-south-1'
         ECR_REPO = 'splito'
@@ -9,15 +13,17 @@ pipeline {
     }
 
     stages {
-		
-		stage('Build splito-events') {
-			steps {
-				dir('../splito-events') {
-					git url: 'git@github.com:gsnisn/splito-events.git', branch: 'main'
-					sh 'mvn clean install'
-				}
-			}
-		}
+
+        stage('Build splito-events') {
+            steps {
+                dir('../splito-events') {
+                    git branch: 'main',
+                        url: 'https://github.com/gsnisn/splito-events.git',
+                        credentialsId: 'github-token'
+                    sh 'mvn clean install'
+                }
+            }
+        }
 
         stage('Build JAR') {
             steps {
