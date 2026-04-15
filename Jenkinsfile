@@ -28,16 +28,16 @@ pipeline {
             }
         }
 
-        stage('Build splito-events') {
-            steps {
-                dir('../splito-events') {
-                    git branch: 'main',
-                        url: 'https://github.com/gsnisn/splito-events.git',
-                        credentialsId: 'github-token'
-                    sh 'mvn clean install'
-                }
-            }
-        }
+//         stage('Build splito-events') {
+//             steps {
+//                 dir('../splito-events') {
+//                     git branch: 'main',
+//                         url: 'https://github.com/gsnisn/splito-events.git',
+//                         credentialsId: 'github-token'
+//                     sh 'mvn clean install'
+//                 }
+//             }
+//         }
 
         stage('Build JAR') {
             steps {
