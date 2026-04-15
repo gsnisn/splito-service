@@ -41,7 +41,7 @@ pipeline {
 
         stage('Build JAR') {
             steps {
-                sh 'mvn clean package -DskipTests'
+                sh 'mvn -gs /var/jenkins_home/.m2/settings.xml -s /var/jenkins_home/.m2/settings.xml clean package -DskipTests'
             }
         }
 
