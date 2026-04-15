@@ -1,0 +1,43 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+  data:
+    redis:
+      host: ${REDIS_HOST}
+      port: ${REDIS_PORT:6379}
+      timeout: 2s
+
+  cache:
+    type: redis
+    cache-names:
+      - users
+      - groups
+      - groupBalances
+      - userList
+      - groupList
+    redis:
+      time-to-live: 10m
+      cache-null-values: false
+
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+
+  security:
+    jwt:
+      secret: ${JWT_SECRET}
+      access-ttl-minutes: ${JWT_ACCESS_TTL_MINUTES:15}
+      refresh-ttl-days: ${JWT_REFRESH_TTL_DAYS:30}
+      reset-ttl-minutes: ${JWT_RESET_TTL_MINUTES:15}
+
+  flyway:
+    enabled: true
+
+server:
+  port: ${PORT:8080}
+
+logging:
+  level:
+    root: INFO

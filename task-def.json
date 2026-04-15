@@ -1,0 +1,33 @@
+{
+  "family": "splito-task",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "512",
+  "memory": "1024",
+  "executionRoleArn": "arn:aws:iam::970547364233:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "name": "splito",
+      "image": "970547364233.dkr.ecr.ap-south-1.amazonaws.com/splito:1.0.0",
+      "portMappings": [{ "containerPort": 8080, "protocol": "tcp" }],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/splito",
+          "awslogs-region": "ap-south-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      },
+      "environment": [
+        { "name": "SPRING_PROFILES_ACTIVE", "value": "prod" },
+        { "name": "ACCESS_TTL_MINUTES", "value": "1" },
+        { "name": "JWT_RESET_TTL_MINUTES", "value": "15" },
+        { "name": "JWT_SECRET", "value": "hswiA-2jdsi78!jfdk$sjfdfSajj@77(0PqvreFGR58%&926dsor#ffi0yeeGKwL" },
+        { "name": "REFRESH_TTL_DAYS", "value": "30" },
+        { "name": "SPRING_DATASOURCE_PASSWORD", "value": "Dj12smyf*" },
+        { "name": "SPRING_DATASOURCE_URL", "value": "jdbc:postgresql://splito-db.ct6cmk42eafo.ap-south-1.rds.amazonaws.com:5432/splito" },
+        { "name": "SPRING_DATASOURCE_USERNAME", "value": "splito" }
+      ]
+    }
+  ]
+}

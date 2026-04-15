@@ -1,0 +1,1251 @@
+2026-03-28 20:37:02.941 INFO  [main] cid= trace= span= com.splito.SplitoApplication - Starting SplitoApplication using Java 17.0.12 with PID 20484 (C:\Users\shrav\Documents\AB - Spring Boot\splito\splito-parent\splito\target\classes started by shrav in C:\Users\shrav\Documents\AB - Spring Boot\splito\splito-parent\splito)
+2026-03-28 20:37:02.973 INFO  [main] cid= trace= span= com.splito.SplitoApplication - The following 1 profile is active: "dev"
+2026-03-28 20:37:04.157 INFO  [background-preinit] cid= trace= span= o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-03-28 20:37:06.037 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-28 20:37:06.042 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-28 20:37:06.506 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 444 ms. Found 7 JPA repository interfaces.
+2026-03-28 20:37:06.547 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-28 20:37:06.551 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-28 20:37:06.594 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.DirectGroupPairRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 20:37:06.599 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.ExpenseRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 20:37:06.601 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.GroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 20:37:06.601 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.PasswordResetTokenRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 20:37:06.603 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.RefreshTokenRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 20:37:06.604 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.SettlementRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 20:37:06.605 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 20:37:06.605 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 0 Redis repository interfaces.
+2026-03-28 20:37:08.512 INFO  [main] cid= trace= span= o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-28 20:37:08.535 INFO  [main] cid= trace= span= o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-28 20:37:08.538 INFO  [main] cid= trace= span= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-28 20:37:08.539 INFO  [main] cid= trace= span= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-03-28 20:37:08.711 INFO  [main] cid= trace= span= o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 5526 ms
+2026-03-28 20:37:09.275 INFO  [main] cid= trace= span= org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-28 20:37:09.445 INFO  [main] cid= trace= span= org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-03-28 20:37:10.617 INFO  [main] cid= trace= span= o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-28 20:37:10.695 INFO  [main] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-28 20:37:12.459 INFO  [main] cid= trace= span= com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63fde7ca
+2026-03-28 20:37:12.464 INFO  [main] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-28 20:37:12.744 INFO  [main] cid= trace= span= o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/splito]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.1
+	Default catalog/schema: splito/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-28 20:37:16.078 INFO  [main] cid= trace= span= org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-28 20:37:16.094 INFO  [main] cid= trace= span= o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-28 20:37:16.269 INFO  [main] cid= trace= span= o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-28 20:37:17.487 INFO  [main] cid= trace= span= org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/splito (PostgreSQL 18.1)
+2026-03-28 20:37:17.691 INFO  [main] cid= trace= span= o.f.core.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.123s)
+2026-03-28 20:37:17.724 INFO  [main] cid= trace= span= o.f.core.internal.command.DbMigrate - Current version of schema "public": 7
+2026-03-28 20:37:17.733 INFO  [main] cid= trace= span= o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2026-03-28 20:37:24.774 WARN  [main] cid= trace= span= o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-28 20:37:25.204 INFO  [main] cid= trace= span= o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-03-28 20:37:27.113 INFO  [main] cid= trace= span= o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-03-28 20:37:30.253 INFO  [main] cid= trace= span= o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-28 20:37:30.349 INFO  [main] cid= trace= span= o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-28 20:37:30.414 INFO  [main] cid= trace= span= com.splito.SplitoApplication - Started SplitoApplication in 29.4 seconds (process running for 31.301)
+2026-03-28 20:37:30.608 WARN  [main] cid= trace= span= o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-28 20:37:30.608 WARN  [main] cid= trace= span= o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-28 20:38:06.221 INFO  [http-nio-8080-exec-5] cid= trace= span= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-28 20:38:06.221 INFO  [http-nio-8080-exec-5] cid= trace= span= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-28 20:38:06.225 INFO  [http-nio-8080-exec-5] cid= trace= span= o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-03-28 20:38:06.260 INFO  [http-nio-8080-exec-5] cid=1ca19e28-190c-4ba2-8267-428b0bcfb5cb trace= span= c.s.observability.HttpLoggingFilter - HTTP IN  POST /api/v1/auth/login user=anonymous cid=1ca19e28-190c-4ba2-8267-428b0bcfb5cb headers={Content-Type=application/json, User-Agent=PostmanRuntime/7.51.1, Accept=*/*, Cache-Control=no-cache, Postman-Token=6790668d-c9b0-455f-be6e-00adb643f230, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Connection=keep-alive, Content-Length=68} body=
+2026-03-28 20:38:06.296 WARN  [http-nio-8080-exec-5] cid=1ca19e28-190c-4ba2-8267-428b0bcfb5cb trace= span= o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/v1/auth/login' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-03-28 20:38:06.616 INFO  [http-nio-8080-exec-5] cid=1ca19e28-190c-4ba2-8267-428b0bcfb5cb trace= span= com.splito.service.AuthService - AUTH_LOGIN_START email=s***@test.com device=PostmanRuntime/7.51.1 | ip=0:0:0:0:0:0:0:1
+2026-03-28 20:38:06.874 DEBUG [http-nio-8080-exec-5] cid=1ca19e28-190c-4ba2-8267-428b0bcfb5cb trace= span= org.hibernate.SQL - select su1_0.id,su1_0.created_at,su1_0.created_by,su1_0.deleted_at,su1_0.email,su1_0.name,su1_0.password,su1_0.phone,su1_0.updated_at,su1_0.updated_by from splito_user su1_0 where (su1_0.deleted_at IS NULL) and su1_0.email=?
+2026-03-28 20:38:06.877 TRACE [http-nio-8080-exec-5] cid=1ca19e28-190c-4ba2-8267-428b0bcfb5cb trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [shravan@test.com]
+2026-03-28 20:38:07.118 INFO  [http-nio-8080-exec-5] cid=1ca19e28-190c-4ba2-8267-428b0bcfb5cb trace= span= com.splito.service.AuthService - AUTH_LOGIN_PASSWORD_OK userId=1 email=s***@test.com
+2026-03-28 20:38:07.467 DEBUG [http-nio-8080-exec-5] cid=1ca19e28-190c-4ba2-8267-428b0bcfb5cb trace= span= org.hibernate.SQL - insert into refresh_token (created_at,created_by,deleted_at,device,expires_at,revoked_at,token_hash,updated_at,updated_by,user_id) values (?,?,?,?,?,?,?,?,?,?)
+2026-03-28 20:38:07.473 TRACE [http-nio-8080-exec-5] cid=1ca19e28-190c-4ba2-8267-428b0bcfb5cb trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:TIMESTAMP_UTC) <- [2026-03-28T15:08:07.417616200Z]
+2026-03-28 20:38:07.475 TRACE [http-nio-8080-exec-5] cid=1ca19e28-190c-4ba2-8267-428b0bcfb5cb trace= span= org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [null]
+2026-03-28 20:38:07.475 TRACE [http-nio-8080-exec-5] cid=1ca19e28-190c-4ba2-8267-428b0bcfb5cb trace= span= org.hibernate.orm.jdbc.bind - binding parameter (3:TIMESTAMP_UTC) <- [null]
+2026-03-28 20:38:07.475 TRACE [http-nio-8080-exec-5] cid=1ca19e28-190c-4ba2-8267-428b0bcfb5cb trace= span= org.hibernate.orm.jdbc.bind - binding parameter (4:VARCHAR) <- [PostmanRuntime/7.51.1 | ip=0:0:0:0:0:0:0:1]
+2026-03-28 20:38:07.475 TRACE [http-nio-8080-exec-5] cid=1ca19e28-190c-4ba2-8267-428b0bcfb5cb trace= span= org.hibernate.orm.jdbc.bind - binding parameter (5:TIMESTAMP_UTC) <- [2026-04-27T15:08:07.351003500Z]
+2026-03-28 20:38:07.475 TRACE [http-nio-8080-exec-5] cid=1ca19e28-190c-4ba2-8267-428b0bcfb5cb trace= span= org.hibernate.orm.jdbc.bind - binding parameter (6:TIMESTAMP_UTC) <- [null]
+2026-03-28 20:38:07.475 TRACE [http-nio-8080-exec-5] cid=1ca19e28-190c-4ba2-8267-428b0bcfb5cb trace= span= org.hibernate.orm.jdbc.bind - binding parameter (7:VARCHAR) <- [5671a5dce9ec88e66e07f8098ef3765084d9a9bad11d03a7b0224e1f6a11a85a]
+2026-03-28 20:38:07.476 TRACE [http-nio-8080-exec-5] cid=1ca19e28-190c-4ba2-8267-428b0bcfb5cb trace= span= org.hibernate.orm.jdbc.bind - binding parameter (8:TIMESTAMP_UTC) <- [2026-03-28T15:08:07.417616200Z]
+2026-03-28 20:38:07.477 TRACE [http-nio-8080-exec-5] cid=1ca19e28-190c-4ba2-8267-428b0bcfb5cb trace= span= org.hibernate.orm.jdbc.bind - binding parameter (9:BIGINT) <- [null]
+2026-03-28 20:38:07.477 TRACE [http-nio-8080-exec-5] cid=1ca19e28-190c-4ba2-8267-428b0bcfb5cb trace= span= org.hibernate.orm.jdbc.bind - binding parameter (10:BIGINT) <- [1]
+2026-03-28 20:38:07.521 INFO  [http-nio-8080-exec-5] cid=1ca19e28-190c-4ba2-8267-428b0bcfb5cb trace= span= com.splito.service.AuthService - AUTH_LOGIN_REFRESH_TOKEN_ISSUED userId=1 device=PostmanRuntime/7.51.1 | ip=0:0:0:0:0:0:0:1 refreshTokenId=38
+2026-03-28 20:38:07.522 INFO  [http-nio-8080-exec-5] cid=1ca19e28-190c-4ba2-8267-428b0bcfb5cb trace= span= com.splito.service.AuthService - AUTH_LOGIN_SUCCESS userId=1
+2026-03-28 20:38:07.638 INFO  [http-nio-8080-exec-5] cid= trace= span= c.s.observability.HttpLoggingFilter - HTTP OUT POST /api/v1/auth/login status=200 durMs=1377 cid=1ca19e28-190c-4ba2-8267-428b0bcfb5cb body={"accessToken":"***","refreshToken":"***"}
+2026-03-28 20:38:38.045 INFO  [http-nio-8080-exec-2] cid=5dc06f5b-f29a-4e4e-bcc0-0e0e1976357d trace= span= c.s.observability.HttpLoggingFilter - HTTP IN  POST /api/v1/groups/1/expenses user=anonymous cid=5dc06f5b-f29a-4e4e-bcc0-0e0e1976357d headers={Content-Type=application/json, Authorization=***, User-Agent=PostmanRuntime/7.51.1, Accept=*/*, Cache-Control=no-cache, Postman-Token=d144eaf0-25a8-4ddc-9217-8f6282245424, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Connection=keep-alive, Content-Length=123} body=
+2026-03-28 20:38:38.153 DEBUG [http-nio-8080-exec-2] cid=5dc06f5b-f29a-4e4e-bcc0-0e0e1976357d trace= span= org.hibernate.SQL - select su1_0.id,su1_0.created_at,su1_0.created_by,su1_0.deleted_at,su1_0.email,su1_0.name,su1_0.password,su1_0.phone,su1_0.updated_at,su1_0.updated_by from splito_user su1_0 where (su1_0.deleted_at IS NULL) and su1_0.email=?
+2026-03-28 20:38:38.154 TRACE [http-nio-8080-exec-2] cid=5dc06f5b-f29a-4e4e-bcc0-0e0e1976357d trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [shravan@test.com]
+2026-03-28 20:38:38.193 INFO  [http-nio-8080-exec-2] cid= trace= span= c.s.observability.HttpLoggingFilter - HTTP OUT POST /api/v1/groups/1/expenses status=400 durMs=147 cid=5dc06f5b-f29a-4e4e-bcc0-0e0e1976357d body={"error":"Bad Request","message":"Name for argument of type [java.lang.Long] not specified, and parameter name information not available via reflection. Ensure that the compiler uses the '-parameters' flag.","path":"/api/v1/groups/1/expenses","status":400,"timestamp":"2026-03-28T20:38:38.1706864"}
+2026-03-28 20:52:32.215 INFO  [http-nio-8080-exec-4] cid=e01c28d7-2740-4686-8dfc-190db23338b0 trace= span= c.s.observability.HttpLoggingFilter - HTTP IN  POST /api/v1/auth/login user=anonymous cid=e01c28d7-2740-4686-8dfc-190db23338b0 headers={Content-Type=application/json, User-Agent=PostmanRuntime/7.51.1, Accept=*/*, Cache-Control=no-cache, Postman-Token=8957b451-dc6f-4380-b35d-f9428bc4a934, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Connection=keep-alive, Content-Length=68} body=
+2026-03-28 20:52:32.219 INFO  [http-nio-8080-exec-4] cid=e01c28d7-2740-4686-8dfc-190db23338b0 trace= span= com.splito.service.AuthService - AUTH_LOGIN_START email=s***@test.com device=PostmanRuntime/7.51.1 | ip=0:0:0:0:0:0:0:1
+2026-03-28 20:52:32.221 DEBUG [http-nio-8080-exec-4] cid=e01c28d7-2740-4686-8dfc-190db23338b0 trace= span= org.hibernate.SQL - select su1_0.id,su1_0.created_at,su1_0.created_by,su1_0.deleted_at,su1_0.email,su1_0.name,su1_0.password,su1_0.phone,su1_0.updated_at,su1_0.updated_by from splito_user su1_0 where (su1_0.deleted_at IS NULL) and su1_0.email=?
+2026-03-28 20:52:32.221 TRACE [http-nio-8080-exec-4] cid=e01c28d7-2740-4686-8dfc-190db23338b0 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [shravan@test.com]
+2026-03-28 20:52:32.305 INFO  [http-nio-8080-exec-4] cid=e01c28d7-2740-4686-8dfc-190db23338b0 trace= span= com.splito.service.AuthService - AUTH_LOGIN_PASSWORD_OK userId=1 email=s***@test.com
+2026-03-28 20:52:32.308 DEBUG [http-nio-8080-exec-4] cid=e01c28d7-2740-4686-8dfc-190db23338b0 trace= span= org.hibernate.SQL - insert into refresh_token (created_at,created_by,deleted_at,device,expires_at,revoked_at,token_hash,updated_at,updated_by,user_id) values (?,?,?,?,?,?,?,?,?,?)
+2026-03-28 20:52:32.309 TRACE [http-nio-8080-exec-4] cid=e01c28d7-2740-4686-8dfc-190db23338b0 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:TIMESTAMP_UTC) <- [2026-03-28T15:22:32.308207300Z]
+2026-03-28 20:52:32.309 TRACE [http-nio-8080-exec-4] cid=e01c28d7-2740-4686-8dfc-190db23338b0 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [null]
+2026-03-28 20:52:32.309 TRACE [http-nio-8080-exec-4] cid=e01c28d7-2740-4686-8dfc-190db23338b0 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (3:TIMESTAMP_UTC) <- [null]
+2026-03-28 20:52:32.309 TRACE [http-nio-8080-exec-4] cid=e01c28d7-2740-4686-8dfc-190db23338b0 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (4:VARCHAR) <- [PostmanRuntime/7.51.1 | ip=0:0:0:0:0:0:0:1]
+2026-03-28 20:52:32.309 TRACE [http-nio-8080-exec-4] cid=e01c28d7-2740-4686-8dfc-190db23338b0 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (5:TIMESTAMP_UTC) <- [2026-04-27T15:22:32.307205100Z]
+2026-03-28 20:52:32.310 TRACE [http-nio-8080-exec-4] cid=e01c28d7-2740-4686-8dfc-190db23338b0 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (6:TIMESTAMP_UTC) <- [null]
+2026-03-28 20:52:32.310 TRACE [http-nio-8080-exec-4] cid=e01c28d7-2740-4686-8dfc-190db23338b0 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (7:VARCHAR) <- [e2df5e6655e88f72fd1f42df39b44818d80a86a7f532b70557370ac67d52dbed]
+2026-03-28 20:52:32.310 TRACE [http-nio-8080-exec-4] cid=e01c28d7-2740-4686-8dfc-190db23338b0 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (8:TIMESTAMP_UTC) <- [2026-03-28T15:22:32.308207300Z]
+2026-03-28 20:52:32.310 TRACE [http-nio-8080-exec-4] cid=e01c28d7-2740-4686-8dfc-190db23338b0 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (9:BIGINT) <- [null]
+2026-03-28 20:52:32.311 TRACE [http-nio-8080-exec-4] cid=e01c28d7-2740-4686-8dfc-190db23338b0 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (10:BIGINT) <- [1]
+2026-03-28 20:52:32.313 INFO  [http-nio-8080-exec-4] cid=e01c28d7-2740-4686-8dfc-190db23338b0 trace= span= com.splito.service.AuthService - AUTH_LOGIN_REFRESH_TOKEN_ISSUED userId=1 device=PostmanRuntime/7.51.1 | ip=0:0:0:0:0:0:0:1 refreshTokenId=39
+2026-03-28 20:52:32.313 INFO  [http-nio-8080-exec-4] cid=e01c28d7-2740-4686-8dfc-190db23338b0 trace= span= com.splito.service.AuthService - AUTH_LOGIN_SUCCESS userId=1
+2026-03-28 20:52:32.318 INFO  [http-nio-8080-exec-4] cid= trace= span= c.s.observability.HttpLoggingFilter - HTTP OUT POST /api/v1/auth/login status=200 durMs=101 cid=e01c28d7-2740-4686-8dfc-190db23338b0 body={"accessToken":"***","refreshToken":"***"}
+2026-03-28 20:52:37.431 INFO  [http-nio-8080-exec-3] cid=61aef46c-597d-4f56-a868-a5f618ba9cd4 trace= span= c.s.observability.HttpLoggingFilter - HTTP IN  POST /api/v1/groups/1/expenses user=anonymous cid=61aef46c-597d-4f56-a868-a5f618ba9cd4 headers={Content-Type=application/json, Authorization=***, User-Agent=PostmanRuntime/7.51.1, Accept=*/*, Cache-Control=no-cache, Postman-Token=f970cf07-daac-43cf-b36d-347ed45e9e02, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Connection=keep-alive, Content-Length=123} body=
+2026-03-28 20:52:37.438 DEBUG [http-nio-8080-exec-3] cid=61aef46c-597d-4f56-a868-a5f618ba9cd4 trace= span= org.hibernate.SQL - select su1_0.id,su1_0.created_at,su1_0.created_by,su1_0.deleted_at,su1_0.email,su1_0.name,su1_0.password,su1_0.phone,su1_0.updated_at,su1_0.updated_by from splito_user su1_0 where (su1_0.deleted_at IS NULL) and su1_0.email=?
+2026-03-28 20:52:37.438 TRACE [http-nio-8080-exec-3] cid=61aef46c-597d-4f56-a868-a5f618ba9cd4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [shravan@test.com]
+2026-03-28 20:52:37.446 INFO  [http-nio-8080-exec-3] cid= trace= span= c.s.observability.HttpLoggingFilter - HTTP OUT POST /api/v1/groups/1/expenses status=400 durMs=15 cid=61aef46c-597d-4f56-a868-a5f618ba9cd4 body={"error":"Bad Request","message":"Name for argument of type [java.lang.Long] not specified, and parameter name information not available via reflection. Ensure that the compiler uses the '-parameters' flag.","path":"/api/v1/groups/1/expenses","status":400,"timestamp":"2026-03-28T20:52:37.4439487"}
+2026-03-28 20:52:42.710 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-28 20:52:42.819 INFO  [tomcat-shutdown] cid= trace= span= o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-28 20:52:42.852 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-28 20:52:42.859 INFO  [SpringApplicationShutdownHook] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-28 20:52:42.880 INFO  [SpringApplicationShutdownHook] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-28 20:52:48.923 INFO  [main] cid= trace= span= com.splito.SplitoApplication - Starting SplitoApplication using Java 17.0.12 with PID 6748 (C:\Users\shrav\Documents\AB - Spring Boot\splito\splito-parent\splito\target\classes started by shrav in C:\Users\shrav\Documents\AB - Spring Boot\splito\splito-parent\splito)
+2026-03-28 20:52:48.933 INFO  [main] cid= trace= span= com.splito.SplitoApplication - The following 1 profile is active: "dev"
+2026-03-28 20:52:50.021 INFO  [background-preinit] cid= trace= span= o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-03-28 20:52:52.348 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-28 20:52:52.353 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-28 20:52:52.771 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 399 ms. Found 7 JPA repository interfaces.
+2026-03-28 20:52:52.816 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-28 20:52:52.819 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-28 20:52:52.869 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.DirectGroupPairRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 20:52:52.875 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.ExpenseRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 20:52:52.876 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.GroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 20:52:52.877 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.PasswordResetTokenRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 20:52:52.879 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.RefreshTokenRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 20:52:52.880 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.SettlementRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 20:52:52.881 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 20:52:52.882 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 0 Redis repository interfaces.
+2026-03-28 20:52:54.714 INFO  [main] cid= trace= span= o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-28 20:52:54.733 INFO  [main] cid= trace= span= o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-28 20:52:54.736 INFO  [main] cid= trace= span= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-28 20:52:54.737 INFO  [main] cid= trace= span= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-03-28 20:52:54.877 INFO  [main] cid= trace= span= o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 5788 ms
+2026-03-28 20:52:55.568 INFO  [main] cid= trace= span= org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-28 20:52:55.833 INFO  [main] cid= trace= span= org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-03-28 20:52:57.020 INFO  [main] cid= trace= span= o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-28 20:52:57.116 INFO  [main] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-28 20:52:57.553 INFO  [main] cid= trace= span= com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3a6409ec
+2026-03-28 20:52:57.558 INFO  [main] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-28 20:52:57.723 INFO  [main] cid= trace= span= o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/splito]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.1
+	Default catalog/schema: splito/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-28 20:53:00.224 INFO  [main] cid= trace= span= org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-28 20:53:00.241 INFO  [main] cid= trace= span= o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-28 20:53:00.383 INFO  [main] cid= trace= span= o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-28 20:53:01.581 INFO  [main] cid= trace= span= org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/splito (PostgreSQL 18.1)
+2026-03-28 20:53:01.738 INFO  [main] cid= trace= span= o.f.core.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.088s)
+2026-03-28 20:53:01.770 INFO  [main] cid= trace= span= o.f.core.internal.command.DbMigrate - Current version of schema "public": 7
+2026-03-28 20:53:01.777 INFO  [main] cid= trace= span= o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2026-03-28 20:53:04.519 WARN  [main] cid= trace= span= o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-28 20:53:04.794 INFO  [main] cid= trace= span= o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-03-28 20:53:05.860 INFO  [main] cid= trace= span= o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-03-28 20:53:07.091 INFO  [main] cid= trace= span= o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-28 20:53:07.140 INFO  [main] cid= trace= span= o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-28 20:53:07.182 INFO  [main] cid= trace= span= com.splito.SplitoApplication - Started SplitoApplication in 20.009 seconds (process running for 21.333)
+2026-03-28 20:53:07.288 WARN  [main] cid= trace= span= o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-28 20:53:07.289 WARN  [main] cid= trace= span= o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-28 20:53:31.260 INFO  [http-nio-8080-exec-2] cid= trace= span= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-28 20:53:31.261 INFO  [http-nio-8080-exec-2] cid= trace= span= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-28 20:53:31.266 INFO  [http-nio-8080-exec-2] cid= trace= span= o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2026-03-28 20:53:31.315 INFO  [http-nio-8080-exec-2] cid=bbf2e2ca-de2e-4472-8e93-b1b24a70e8b6 trace= span= c.s.observability.HttpLoggingFilter - HTTP IN  POST /api/v1/auth/login user=anonymous cid=bbf2e2ca-de2e-4472-8e93-b1b24a70e8b6 headers={Content-Type=application/json, User-Agent=PostmanRuntime/7.51.1, Accept=*/*, Cache-Control=no-cache, Postman-Token=1aee2ad3-9373-43c3-ac60-fbef9d7a887a, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Connection=keep-alive, Content-Length=68} body=
+2026-03-28 20:53:31.377 WARN  [http-nio-8080-exec-2] cid=bbf2e2ca-de2e-4472-8e93-b1b24a70e8b6 trace= span= o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/v1/auth/login' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-03-28 20:53:31.686 INFO  [http-nio-8080-exec-2] cid=bbf2e2ca-de2e-4472-8e93-b1b24a70e8b6 trace= span= com.splito.service.AuthService - AUTH_LOGIN_START email=s***@test.com device=PostmanRuntime/7.51.1 | ip=0:0:0:0:0:0:0:1
+2026-03-28 20:53:31.947 DEBUG [http-nio-8080-exec-2] cid=bbf2e2ca-de2e-4472-8e93-b1b24a70e8b6 trace= span= org.hibernate.SQL - select su1_0.id,su1_0.created_at,su1_0.created_by,su1_0.deleted_at,su1_0.email,su1_0.name,su1_0.password,su1_0.phone,su1_0.updated_at,su1_0.updated_by from splito_user su1_0 where (su1_0.deleted_at IS NULL) and su1_0.email=?
+2026-03-28 20:53:31.949 TRACE [http-nio-8080-exec-2] cid=bbf2e2ca-de2e-4472-8e93-b1b24a70e8b6 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [shravan@test.com]
+2026-03-28 20:53:32.167 INFO  [http-nio-8080-exec-2] cid=bbf2e2ca-de2e-4472-8e93-b1b24a70e8b6 trace= span= com.splito.service.AuthService - AUTH_LOGIN_PASSWORD_OK userId=1 email=s***@test.com
+2026-03-28 20:53:32.526 DEBUG [http-nio-8080-exec-2] cid=bbf2e2ca-de2e-4472-8e93-b1b24a70e8b6 trace= span= org.hibernate.SQL - insert into refresh_token (created_at,created_by,deleted_at,device,expires_at,revoked_at,token_hash,updated_at,updated_by,user_id) values (?,?,?,?,?,?,?,?,?,?)
+2026-03-28 20:53:32.533 TRACE [http-nio-8080-exec-2] cid=bbf2e2ca-de2e-4472-8e93-b1b24a70e8b6 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:TIMESTAMP_UTC) <- [2026-03-28T15:23:32.467123500Z]
+2026-03-28 20:53:32.542 TRACE [http-nio-8080-exec-2] cid=bbf2e2ca-de2e-4472-8e93-b1b24a70e8b6 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [null]
+2026-03-28 20:53:32.543 TRACE [http-nio-8080-exec-2] cid=bbf2e2ca-de2e-4472-8e93-b1b24a70e8b6 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (3:TIMESTAMP_UTC) <- [null]
+2026-03-28 20:53:32.544 TRACE [http-nio-8080-exec-2] cid=bbf2e2ca-de2e-4472-8e93-b1b24a70e8b6 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (4:VARCHAR) <- [PostmanRuntime/7.51.1 | ip=0:0:0:0:0:0:0:1]
+2026-03-28 20:53:32.544 TRACE [http-nio-8080-exec-2] cid=bbf2e2ca-de2e-4472-8e93-b1b24a70e8b6 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (5:TIMESTAMP_UTC) <- [2026-04-27T15:23:32.410802200Z]
+2026-03-28 20:53:32.544 TRACE [http-nio-8080-exec-2] cid=bbf2e2ca-de2e-4472-8e93-b1b24a70e8b6 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (6:TIMESTAMP_UTC) <- [null]
+2026-03-28 20:53:32.546 TRACE [http-nio-8080-exec-2] cid=bbf2e2ca-de2e-4472-8e93-b1b24a70e8b6 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (7:VARCHAR) <- [10a8356a3fc4e9d625b4244d30e436a915ab0c5b920430f249eec895063496ef]
+2026-03-28 20:53:32.547 TRACE [http-nio-8080-exec-2] cid=bbf2e2ca-de2e-4472-8e93-b1b24a70e8b6 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (8:TIMESTAMP_UTC) <- [2026-03-28T15:23:32.467123500Z]
+2026-03-28 20:53:32.547 TRACE [http-nio-8080-exec-2] cid=bbf2e2ca-de2e-4472-8e93-b1b24a70e8b6 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (9:BIGINT) <- [null]
+2026-03-28 20:53:32.548 TRACE [http-nio-8080-exec-2] cid=bbf2e2ca-de2e-4472-8e93-b1b24a70e8b6 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (10:BIGINT) <- [1]
+2026-03-28 20:53:32.576 INFO  [http-nio-8080-exec-2] cid=bbf2e2ca-de2e-4472-8e93-b1b24a70e8b6 trace= span= com.splito.service.AuthService - AUTH_LOGIN_REFRESH_TOKEN_ISSUED userId=1 device=PostmanRuntime/7.51.1 | ip=0:0:0:0:0:0:0:1 refreshTokenId=40
+2026-03-28 20:53:32.576 INFO  [http-nio-8080-exec-2] cid=bbf2e2ca-de2e-4472-8e93-b1b24a70e8b6 trace= span= com.splito.service.AuthService - AUTH_LOGIN_SUCCESS userId=1
+2026-03-28 20:53:32.741 INFO  [http-nio-8080-exec-2] cid= trace= span= c.s.observability.HttpLoggingFilter - HTTP OUT POST /api/v1/auth/login status=200 durMs=1418 cid=bbf2e2ca-de2e-4472-8e93-b1b24a70e8b6 body={"accessToken":"***","refreshToken":"***"}
+2026-03-28 20:53:36.416 INFO  [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= c.s.observability.HttpLoggingFilter - HTTP IN  POST /api/v1/groups/1/expenses user=anonymous cid=952f553b-827a-405e-9fae-616809e4685f headers={Content-Type=application/json, Authorization=***, User-Agent=PostmanRuntime/7.51.1, Accept=*/*, Cache-Control=no-cache, Postman-Token=5e217b59-e24e-482e-a52d-b7a91295ae68, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Connection=keep-alive, Content-Length=123} body=
+2026-03-28 20:53:36.530 DEBUG [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.SQL - select su1_0.id,su1_0.created_at,su1_0.created_by,su1_0.deleted_at,su1_0.email,su1_0.name,su1_0.password,su1_0.phone,su1_0.updated_at,su1_0.updated_by from splito_user su1_0 where (su1_0.deleted_at IS NULL) and su1_0.email=?
+2026-03-28 20:53:36.531 TRACE [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [shravan@test.com]
+2026-03-28 20:53:36.718 DEBUG [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.SQL - select sg1_0.id,sg1_0.created_at,sg1_0.created_by,sg1_0.deleted_at,sg1_0.is_direct,sg1_0.name,sg1_0.updated_at,sg1_0.updated_by from splito_group sg1_0 where sg1_0.id=? and (sg1_0.deleted_at IS NULL)
+2026-03-28 20:53:36.719 TRACE [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [1]
+2026-03-28 20:53:36.804 DEBUG [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.SQL - select m1_0.splito_group_id,m1_1.id,m1_1.created_at,m1_1.created_by,m1_1.deleted_at,m1_1.email,m1_1.name,m1_1.password,m1_1.phone,m1_1.updated_at,m1_1.updated_by from splito_group_members m1_0 join splito_user m1_1 on m1_1.id=m1_0.members_id where m1_0.splito_group_id=? and ( m1_1.deleted_at IS NULL)
+2026-03-28 20:53:36.804 TRACE [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [1]
+2026-03-28 20:53:36.856 DEBUG [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.SQL - select su1_0.id,su1_0.created_at,su1_0.created_by,su1_0.deleted_at,su1_0.email,su1_0.name,su1_0.password,su1_0.phone,su1_0.updated_at,su1_0.updated_by from splito_user su1_0 where (su1_0.deleted_at IS NULL) and su1_0.id in (?,?,?)
+2026-03-28 20:53:36.857 TRACE [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [1]
+2026-03-28 20:53:36.857 TRACE [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [2]
+2026-03-28 20:53:36.857 TRACE [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (3:BIGINT) <- [4]
+2026-03-28 20:53:36.869 DEBUG [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.SQL - insert into expense (amount,created_at,created_by,deleted_at,description,group_id,paid_by_id,updated_at,updated_by) values (?,?,?,?,?,?,?,?,?)
+2026-03-28 20:53:36.870 TRACE [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:NUMERIC) <- [700.00]
+2026-03-28 20:53:36.871 TRACE [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (2:TIMESTAMP_UTC) <- [2026-03-28T15:23:36.868079500Z]
+2026-03-28 20:53:36.871 TRACE [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (3:BIGINT) <- [1]
+2026-03-28 20:53:36.871 TRACE [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (4:TIMESTAMP_UTC) <- [null]
+2026-03-28 20:53:36.871 TRACE [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (5:VARCHAR) <- [Petrol day 2]
+2026-03-28 20:53:36.873 TRACE [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (6:BIGINT) <- [1]
+2026-03-28 20:53:36.873 TRACE [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (7:BIGINT) <- [1]
+2026-03-28 20:53:36.873 TRACE [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (8:TIMESTAMP_UTC) <- [2026-03-28T15:23:36.868079500Z]
+2026-03-28 20:53:36.873 TRACE [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (9:BIGINT) <- [1]
+2026-03-28 20:53:36.985 INFO  [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= o.a.k.common.config.AbstractConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = splito-producer-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.assertion.algorithm = RS256
+	sasl.oauthbearer.assertion.claim.aud = null
+	sasl.oauthbearer.assertion.claim.exp.seconds = 300
+	sasl.oauthbearer.assertion.claim.iss = null
+	sasl.oauthbearer.assertion.claim.jti.include = false
+	sasl.oauthbearer.assertion.claim.nbf.seconds = 60
+	sasl.oauthbearer.assertion.claim.sub = null
+	sasl.oauthbearer.assertion.file = null
+	sasl.oauthbearer.assertion.private.key.file = null
+	sasl.oauthbearer.assertion.private.key.passphrase = null
+	sasl.oauthbearer.assertion.template.file = null
+	sasl.oauthbearer.client.credentials.client.id = null
+	sasl.oauthbearer.client.credentials.client.secret = null
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.jwt.retriever.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtRetriever
+	sasl.oauthbearer.jwt.validator.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtValidator
+	sasl.oauthbearer.scope = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transaction.two.phase.commit.enable = false
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2026-03-28 20:53:37.092 INFO  [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-03-28 20:53:37.159 INFO  [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= o.a.k.clients.producer.KafkaProducer - [Producer clientId=splito-producer-1] Instantiated an idempotent producer.
+2026-03-28 20:53:37.309 INFO  [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= o.a.kafka.common.utils.AppInfoParser - Kafka version: 4.1.1
+2026-03-28 20:53:37.309 INFO  [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= o.a.kafka.common.utils.AppInfoParser - Kafka commitId: be816b82d25370ce
+2026-03-28 20:53:37.309 INFO  [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1774711417303
+2026-03-28 20:53:38.389 INFO  [kafka-producer-network-thread | splito-producer-1] cid= trace= span= org.apache.kafka.clients.Metadata - [Producer clientId=splito-producer-1] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-03-28 20:53:38.441 DEBUG [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.SQL - insert into expense_split_between (expense_id,split_between_id) values (?,?)
+2026-03-28 20:53:38.442 TRACE [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [6]
+2026-03-28 20:53:38.442 TRACE [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [1]
+2026-03-28 20:53:38.447 DEBUG [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.SQL - insert into expense_split_between (expense_id,split_between_id) values (?,?)
+2026-03-28 20:53:38.448 TRACE [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [6]
+2026-03-28 20:53:38.448 TRACE [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [2]
+2026-03-28 20:53:38.449 DEBUG [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.SQL - insert into expense_split_between (expense_id,split_between_id) values (?,?)
+2026-03-28 20:53:38.449 TRACE [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [6]
+2026-03-28 20:53:38.449 TRACE [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [4]
+2026-03-28 20:53:38.464 ERROR [http-nio-8080-exec-3] cid=952f553b-827a-405e-9fae-616809e4685f trace= span= c.s.exception.GlobalExceptionHandler - Unhandled exception for POST /api/v1/groups/1/expenses
+org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'groupId' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:268)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:123)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:419)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:267)
+	at org.springframework.cache.interceptor.CacheOperationExpressionEvaluator.key(CacheOperationExpressionEvaluator.java:106)
+	at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContext.generateKey(CacheAspectSupport.java:950)
+	at org.springframework.cache.interceptor.CacheAspectSupport.generateKey(CacheAspectSupport.java:743)
+	at org.springframework.cache.interceptor.CacheAspectSupport.performCacheEvicts(CacheAspectSupport.java:699)
+	at org.springframework.cache.interceptor.CacheAspectSupport.processCacheEvicts(CacheAspectSupport.java:683)
+	at org.springframework.cache.interceptor.CacheAspectSupport.evaluate(CacheAspectSupport.java:611)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:440)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:404)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.splito.service.ExpenseService$$SpringCGLIB$$0.addExpense(<generated>)
+	at com.splito.controller.ExpenseController.add(ExpenseController.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at com.splito.security.RequestIdFilter.doFilterInternal(RequestIdFilter.java:24)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:493)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:354)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:86)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:132)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at com.splito.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:71)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:337)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at com.splito.observability.HttpLoggingFilter.doFilterInternal(HttpLoggingFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-03-28 20:53:38.485 INFO  [http-nio-8080-exec-3] cid= trace= span= c.s.observability.HttpLoggingFilter - HTTP OUT POST /api/v1/groups/1/expenses status=500 durMs=2068 cid=952f553b-827a-405e-9fae-616809e4685f body={"error":"Internal Server Error","message":"EL1007E: Property or field 'groupId' cannot be found on null","path":"/api/v1/groups/1/expenses","status":500,"timestamp":"2026-03-28T20:53:38.469945"}
+2026-03-28 20:53:38.519 INFO  [kafka-producer-network-thread | splito-producer-1] cid= trace= span= o.a.k.c.p.i.TransactionManager - [Producer clientId=splito-producer-1] ProducerId set to 1000 with epoch 0
+2026-03-28 20:58:25.478 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-28 20:58:25.777 INFO  [tomcat-shutdown] cid= trace= span= o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-28 20:58:25.795 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.a.k.clients.producer.KafkaProducer - [Producer clientId=splito-producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2026-03-28 20:58:25.821 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-03-28 20:58:25.822 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-03-28 20:58:25.822 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2026-03-28 20:58:25.822 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-03-28 20:58:25.827 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for splito-producer-1 unregistered
+2026-03-28 20:58:25.880 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-28 20:58:25.886 INFO  [SpringApplicationShutdownHook] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-28 20:58:25.914 INFO  [SpringApplicationShutdownHook] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-28 20:58:50.750 INFO  [main] cid= trace= span= com.splito.SplitoApplication - Starting SplitoApplication using Java 17.0.12 with PID 1836 (C:\Users\shrav\Documents\AB - Spring Boot\splito\splito-parent\splito\target\classes started by shrav in C:\Users\shrav\Documents\AB - Spring Boot\splito\splito-parent\splito)
+2026-03-28 20:58:50.787 INFO  [main] cid= trace= span= com.splito.SplitoApplication - The following 1 profile is active: "dev"
+2026-03-28 20:58:52.990 INFO  [background-preinit] cid= trace= span= o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-03-28 20:58:55.709 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-28 20:58:55.715 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-28 20:58:56.340 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 598 ms. Found 7 JPA repository interfaces.
+2026-03-28 20:58:56.410 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-28 20:58:56.430 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-28 20:58:56.535 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.DirectGroupPairRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 20:58:56.541 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.ExpenseRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 20:58:56.542 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.GroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 20:58:56.544 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.PasswordResetTokenRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 20:58:56.546 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.RefreshTokenRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 20:58:56.547 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.SettlementRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 20:58:56.548 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 20:58:56.550 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 0 Redis repository interfaces.
+2026-03-28 20:58:59.931 INFO  [main] cid= trace= span= o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-28 20:59:00.051 INFO  [main] cid= trace= span= o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-28 20:59:00.058 INFO  [main] cid= trace= span= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-28 20:59:00.058 INFO  [main] cid= trace= span= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-03-28 20:59:00.831 INFO  [main] cid= trace= span= o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 9730 ms
+2026-03-28 20:59:02.007 INFO  [main] cid= trace= span= org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-28 20:59:02.283 INFO  [main] cid= trace= span= org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-03-28 20:59:04.999 INFO  [main] cid= trace= span= o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-28 20:59:05.122 INFO  [main] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-28 20:59:05.705 INFO  [main] cid= trace= span= com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@751b901a
+2026-03-28 20:59:05.711 INFO  [main] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-28 20:59:05.984 INFO  [main] cid= trace= span= o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/splito]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.1
+	Default catalog/schema: splito/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-28 20:59:10.009 INFO  [main] cid= trace= span= org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-28 20:59:10.026 INFO  [main] cid= trace= span= o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-28 20:59:10.210 INFO  [main] cid= trace= span= o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-28 20:59:12.853 INFO  [main] cid= trace= span= org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/splito (PostgreSQL 18.1)
+2026-03-28 20:59:13.122 INFO  [main] cid= trace= span= o.f.core.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.189s)
+2026-03-28 20:59:13.172 INFO  [main] cid= trace= span= o.f.core.internal.command.DbMigrate - Current version of schema "public": 7
+2026-03-28 20:59:13.182 INFO  [main] cid= trace= span= o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2026-03-28 20:59:18.467 WARN  [main] cid= trace= span= o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-28 20:59:18.912 INFO  [main] cid= trace= span= o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-03-28 20:59:20.304 INFO  [main] cid= trace= span= o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-03-28 20:59:23.405 INFO  [main] cid= trace= span= o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-28 20:59:23.504 INFO  [main] cid= trace= span= o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-28 20:59:23.673 INFO  [main] cid= trace= span= com.splito.SplitoApplication - Started SplitoApplication in 35.052 seconds (process running for 38.136)
+2026-03-28 20:59:23.983 WARN  [main] cid= trace= span= o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-28 20:59:23.985 WARN  [main] cid= trace= span= o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-28 21:00:41.032 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-28 21:00:41.262 INFO  [tomcat-shutdown] cid= trace= span= o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-28 21:00:41.308 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-28 21:00:41.314 INFO  [SpringApplicationShutdownHook] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-28 21:00:41.336 INFO  [SpringApplicationShutdownHook] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-28 21:01:03.841 INFO  [main] cid= trace= span= com.splito.SplitoApplication - Starting SplitoApplication using Java 17.0.12 with PID 1540 (C:\Users\shrav\Documents\AB - Spring Boot\splito\splito-parent\splito\target\classes started by shrav in C:\Users\shrav\Documents\AB - Spring Boot\splito\splito-parent\splito)
+2026-03-28 21:01:03.863 INFO  [main] cid= trace= span= com.splito.SplitoApplication - The following 1 profile is active: "dev"
+2026-03-28 21:01:05.637 INFO  [background-preinit] cid= trace= span= o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-03-28 21:01:07.863 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-28 21:01:07.873 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-28 21:01:08.667 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 765 ms. Found 7 JPA repository interfaces.
+2026-03-28 21:01:09.104 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-28 21:01:09.107 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-28 21:01:09.175 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.DirectGroupPairRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 21:01:09.181 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.ExpenseRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 21:01:09.182 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.GroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 21:01:09.183 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.PasswordResetTokenRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 21:01:09.185 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.RefreshTokenRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 21:01:09.186 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.SettlementRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 21:01:09.187 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 21:01:09.187 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 0 Redis repository interfaces.
+2026-03-28 21:01:12.117 INFO  [main] cid= trace= span= o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-28 21:01:12.151 INFO  [main] cid= trace= span= o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-28 21:01:12.157 INFO  [main] cid= trace= span= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-28 21:01:12.158 INFO  [main] cid= trace= span= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-03-28 21:01:12.416 INFO  [main] cid= trace= span= o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 8304 ms
+2026-03-28 21:01:13.440 INFO  [main] cid= trace= span= org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-28 21:01:13.806 INFO  [main] cid= trace= span= org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-03-28 21:01:16.105 INFO  [main] cid= trace= span= o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-28 21:01:16.195 INFO  [main] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-28 21:01:16.704 INFO  [main] cid= trace= span= com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@390978
+2026-03-28 21:01:16.709 INFO  [main] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-28 21:01:16.920 INFO  [main] cid= trace= span= o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/splito]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.1
+	Default catalog/schema: splito/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-28 21:01:20.316 INFO  [main] cid= trace= span= org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-28 21:01:20.343 INFO  [main] cid= trace= span= o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-28 21:01:20.627 INFO  [main] cid= trace= span= o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-28 21:01:22.095 INFO  [main] cid= trace= span= org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/splito (PostgreSQL 18.1)
+2026-03-28 21:01:22.279 INFO  [main] cid= trace= span= o.f.core.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.118s)
+2026-03-28 21:01:22.314 INFO  [main] cid= trace= span= o.f.core.internal.command.DbMigrate - Current version of schema "public": 7
+2026-03-28 21:01:22.322 INFO  [main] cid= trace= span= o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2026-03-28 21:01:26.907 WARN  [main] cid= trace= span= o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-28 21:01:27.312 INFO  [main] cid= trace= span= o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-03-28 21:01:28.587 INFO  [main] cid= trace= span= o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-03-28 21:01:30.849 INFO  [main] cid= trace= span= o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-28 21:01:30.930 INFO  [main] cid= trace= span= o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-28 21:01:30.980 INFO  [main] cid= trace= span= com.splito.SplitoApplication - Started SplitoApplication in 29.536 seconds (process running for 32.032)
+2026-03-28 21:01:31.111 WARN  [main] cid= trace= span= o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-28 21:01:31.112 WARN  [main] cid= trace= span= o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-28 21:04:07.705 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-28 21:04:07.862 INFO  [tomcat-shutdown] cid= trace= span= o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-28 21:04:07.904 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-28 21:04:07.909 INFO  [SpringApplicationShutdownHook] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-28 21:04:07.929 INFO  [SpringApplicationShutdownHook] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-28 21:05:04.916 INFO  [main] cid= trace= span= com.splito.SplitoApplication - Starting SplitoApplication using Java 17.0.12 with PID 20560 (C:\Users\shrav\Documents\AB - Spring Boot\splito\splito-parent\splito\target\classes started by shrav in C:\Users\shrav\Documents\AB - Spring Boot\splito\splito-parent\splito)
+2026-03-28 21:05:04.927 INFO  [main] cid= trace= span= com.splito.SplitoApplication - The following 1 profile is active: "dev"
+2026-03-28 21:05:06.268 INFO  [background-preinit] cid= trace= span= o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-03-28 21:05:08.760 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-28 21:05:08.765 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-28 21:05:09.557 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 761 ms. Found 7 JPA repository interfaces.
+2026-03-28 21:05:09.633 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-28 21:05:09.638 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-28 21:05:09.784 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.DirectGroupPairRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 21:05:09.793 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.ExpenseRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 21:05:09.794 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.GroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 21:05:09.795 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.PasswordResetTokenRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 21:05:09.799 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.RefreshTokenRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 21:05:09.800 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.SettlementRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 21:05:09.800 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 21:05:09.801 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 112 ms. Found 0 Redis repository interfaces.
+2026-03-28 21:05:12.789 INFO  [main] cid= trace= span= o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-28 21:05:12.822 INFO  [main] cid= trace= span= o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-28 21:05:12.829 INFO  [main] cid= trace= span= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-28 21:05:12.830 INFO  [main] cid= trace= span= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-03-28 21:05:13.121 INFO  [main] cid= trace= span= o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 7978 ms
+2026-03-28 21:05:15.293 INFO  [main] cid= trace= span= org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-28 21:05:15.500 INFO  [main] cid= trace= span= org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-03-28 21:05:17.254 INFO  [main] cid= trace= span= o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-28 21:05:17.431 INFO  [main] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-28 21:05:18.041 INFO  [main] cid= trace= span= com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63fde7ca
+2026-03-28 21:05:18.046 INFO  [main] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-28 21:05:18.296 INFO  [main] cid= trace= span= o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/splito]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.1
+	Default catalog/schema: splito/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-28 21:05:21.857 INFO  [main] cid= trace= span= org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-28 21:05:21.874 INFO  [main] cid= trace= span= o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-28 21:05:22.042 INFO  [main] cid= trace= span= o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-28 21:05:23.581 INFO  [main] cid= trace= span= org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/splito (PostgreSQL 18.1)
+2026-03-28 21:05:23.855 INFO  [main] cid= trace= span= o.f.core.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.181s)
+2026-03-28 21:05:23.890 INFO  [main] cid= trace= span= o.f.core.internal.command.DbMigrate - Current version of schema "public": 7
+2026-03-28 21:05:23.898 INFO  [main] cid= trace= span= o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2026-03-28 21:05:29.323 WARN  [main] cid= trace= span= o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-28 21:05:29.996 INFO  [main] cid= trace= span= o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-03-28 21:05:33.722 INFO  [main] cid= trace= span= o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-03-28 21:05:35.608 INFO  [main] cid= trace= span= o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-28 21:05:35.697 INFO  [main] cid= trace= span= o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-28 21:05:35.743 INFO  [main] cid= trace= span= com.splito.SplitoApplication - Started SplitoApplication in 33.502 seconds (process running for 35.999)
+2026-03-28 21:05:35.848 WARN  [main] cid= trace= span= o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-28 21:05:35.849 WARN  [main] cid= trace= span= o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-28 21:05:56.696 INFO  [http-nio-8080-exec-2] cid= trace= span= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-28 21:05:56.698 INFO  [http-nio-8080-exec-2] cid= trace= span= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-28 21:05:56.701 INFO  [http-nio-8080-exec-2] cid= trace= span= o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-03-28 21:05:56.736 INFO  [http-nio-8080-exec-2] cid=23c34ad9-9588-4054-99b5-0068c73aa89a trace= span= c.s.observability.HttpLoggingFilter - HTTP IN  POST /api/v1/groups/1/expenses user=anonymous cid=23c34ad9-9588-4054-99b5-0068c73aa89a headers={Content-Type=application/json, Authorization=***, User-Agent=PostmanRuntime/7.51.1, Accept=*/*, Cache-Control=no-cache, Postman-Token=78bad875-db94-46d4-8610-1d85e2936e5e, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Connection=keep-alive, Content-Length=123} body=
+2026-03-28 21:05:56.767 WARN  [http-nio-8080-exec-2] cid=23c34ad9-9588-4054-99b5-0068c73aa89a trace= span= o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/v1/groups/1/expenses' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-03-28 21:05:57.018 INFO  [http-nio-8080-exec-2] cid=23c34ad9-9588-4054-99b5-0068c73aa89a trace= span= c.s.observability.HttpLoggingFilter - HTTP OUT POST /api/v1/groups/1/expenses status=401 durMs=278 cid=23c34ad9-9588-4054-99b5-0068c73aa89a body={"timestamp":"2026-03-28T21:05:57.003325900+05:30","status":401,"error":"Unauthorized","message":"Missing or invalid token","path":"/api/v1/groups/1/expenses"}
+2026-03-28 21:06:01.997 INFO  [http-nio-8080-exec-5] cid=10cfa911-ff05-43a6-a459-b84d5c002442 trace= span= c.s.observability.HttpLoggingFilter - HTTP IN  POST /api/v1/auth/login user=anonymous cid=10cfa911-ff05-43a6-a459-b84d5c002442 headers={Content-Type=application/json, User-Agent=PostmanRuntime/7.51.1, Accept=*/*, Cache-Control=no-cache, Postman-Token=915e373c-da9f-4339-8303-ca68a83caf1d, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Connection=keep-alive, Content-Length=68} body=
+2026-03-28 21:06:02.289 INFO  [http-nio-8080-exec-5] cid=10cfa911-ff05-43a6-a459-b84d5c002442 trace= span= com.splito.service.AuthService - AUTH_LOGIN_START email=s***@test.com device=PostmanRuntime/7.51.1 | ip=0:0:0:0:0:0:0:1
+2026-03-28 21:06:02.560 DEBUG [http-nio-8080-exec-5] cid=10cfa911-ff05-43a6-a459-b84d5c002442 trace= span= org.hibernate.SQL - select su1_0.id,su1_0.created_at,su1_0.created_by,su1_0.deleted_at,su1_0.email,su1_0.name,su1_0.password,su1_0.phone,su1_0.updated_at,su1_0.updated_by from splito_user su1_0 where (su1_0.deleted_at IS NULL) and su1_0.email=?
+2026-03-28 21:06:02.562 TRACE [http-nio-8080-exec-5] cid=10cfa911-ff05-43a6-a459-b84d5c002442 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [shravan@test.com]
+2026-03-28 21:06:02.818 INFO  [http-nio-8080-exec-5] cid=10cfa911-ff05-43a6-a459-b84d5c002442 trace= span= com.splito.service.AuthService - AUTH_LOGIN_PASSWORD_OK userId=1 email=s***@test.com
+2026-03-28 21:06:02.974 DEBUG [http-nio-8080-exec-5] cid=10cfa911-ff05-43a6-a459-b84d5c002442 trace= span= org.hibernate.SQL - insert into refresh_token (created_at,created_by,deleted_at,device,expires_at,revoked_at,token_hash,updated_at,updated_by,user_id) values (?,?,?,?,?,?,?,?,?,?)
+2026-03-28 21:06:02.978 TRACE [http-nio-8080-exec-5] cid=10cfa911-ff05-43a6-a459-b84d5c002442 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:TIMESTAMP_UTC) <- [2026-03-28T15:36:02.927567600Z]
+2026-03-28 21:06:02.979 TRACE [http-nio-8080-exec-5] cid=10cfa911-ff05-43a6-a459-b84d5c002442 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [null]
+2026-03-28 21:06:02.979 TRACE [http-nio-8080-exec-5] cid=10cfa911-ff05-43a6-a459-b84d5c002442 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (3:TIMESTAMP_UTC) <- [null]
+2026-03-28 21:06:02.979 TRACE [http-nio-8080-exec-5] cid=10cfa911-ff05-43a6-a459-b84d5c002442 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (4:VARCHAR) <- [PostmanRuntime/7.51.1 | ip=0:0:0:0:0:0:0:1]
+2026-03-28 21:06:02.980 TRACE [http-nio-8080-exec-5] cid=10cfa911-ff05-43a6-a459-b84d5c002442 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (5:TIMESTAMP_UTC) <- [2026-04-27T15:36:02.872138100Z]
+2026-03-28 21:06:02.980 TRACE [http-nio-8080-exec-5] cid=10cfa911-ff05-43a6-a459-b84d5c002442 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (6:TIMESTAMP_UTC) <- [null]
+2026-03-28 21:06:02.980 TRACE [http-nio-8080-exec-5] cid=10cfa911-ff05-43a6-a459-b84d5c002442 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (7:VARCHAR) <- [17c854bb352d9925e7508da7194b23f0d5d6654e590f237f5a583daab81c1687]
+2026-03-28 21:06:02.981 TRACE [http-nio-8080-exec-5] cid=10cfa911-ff05-43a6-a459-b84d5c002442 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (8:TIMESTAMP_UTC) <- [2026-03-28T15:36:02.927567600Z]
+2026-03-28 21:06:02.981 TRACE [http-nio-8080-exec-5] cid=10cfa911-ff05-43a6-a459-b84d5c002442 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (9:BIGINT) <- [null]
+2026-03-28 21:06:02.982 TRACE [http-nio-8080-exec-5] cid=10cfa911-ff05-43a6-a459-b84d5c002442 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (10:BIGINT) <- [1]
+2026-03-28 21:06:03.001 INFO  [http-nio-8080-exec-5] cid=10cfa911-ff05-43a6-a459-b84d5c002442 trace= span= com.splito.service.AuthService - AUTH_LOGIN_REFRESH_TOKEN_ISSUED userId=1 device=PostmanRuntime/7.51.1 | ip=0:0:0:0:0:0:0:1 refreshTokenId=41
+2026-03-28 21:06:03.002 INFO  [http-nio-8080-exec-5] cid=10cfa911-ff05-43a6-a459-b84d5c002442 trace= span= com.splito.service.AuthService - AUTH_LOGIN_SUCCESS userId=1
+2026-03-28 21:06:03.122 INFO  [http-nio-8080-exec-5] cid= trace= span= c.s.observability.HttpLoggingFilter - HTTP OUT POST /api/v1/auth/login status=200 durMs=1124 cid=10cfa911-ff05-43a6-a459-b84d5c002442 body={"accessToken":"***","refreshToken":"***"}
+2026-03-28 21:06:06.105 INFO  [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= c.s.observability.HttpLoggingFilter - HTTP IN  POST /api/v1/groups/1/expenses user=anonymous cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 headers={Content-Type=application/json, Authorization=***, User-Agent=PostmanRuntime/7.51.1, Accept=*/*, Cache-Control=no-cache, Postman-Token=46374718-3cb3-42aa-b404-5cdf6633423f, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Connection=keep-alive, Content-Length=123} body=
+2026-03-28 21:06:06.164 DEBUG [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.SQL - select su1_0.id,su1_0.created_at,su1_0.created_by,su1_0.deleted_at,su1_0.email,su1_0.name,su1_0.password,su1_0.phone,su1_0.updated_at,su1_0.updated_by from splito_user su1_0 where (su1_0.deleted_at IS NULL) and su1_0.email=?
+2026-03-28 21:06:06.165 TRACE [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [shravan@test.com]
+2026-03-28 21:06:06.268 DEBUG [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.SQL - select sg1_0.id,sg1_0.created_at,sg1_0.created_by,sg1_0.deleted_at,sg1_0.is_direct,sg1_0.name,sg1_0.updated_at,sg1_0.updated_by from splito_group sg1_0 where sg1_0.id=? and (sg1_0.deleted_at IS NULL)
+2026-03-28 21:06:06.268 TRACE [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [1]
+2026-03-28 21:06:06.307 DEBUG [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.SQL - select m1_0.splito_group_id,m1_1.id,m1_1.created_at,m1_1.created_by,m1_1.deleted_at,m1_1.email,m1_1.name,m1_1.password,m1_1.phone,m1_1.updated_at,m1_1.updated_by from splito_group_members m1_0 join splito_user m1_1 on m1_1.id=m1_0.members_id where m1_0.splito_group_id=? and ( m1_1.deleted_at IS NULL)
+2026-03-28 21:06:06.308 TRACE [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [1]
+2026-03-28 21:06:06.409 DEBUG [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.SQL - select su1_0.id,su1_0.created_at,su1_0.created_by,su1_0.deleted_at,su1_0.email,su1_0.name,su1_0.password,su1_0.phone,su1_0.updated_at,su1_0.updated_by from splito_user su1_0 where (su1_0.deleted_at IS NULL) and su1_0.id in (?,?,?)
+2026-03-28 21:06:06.410 TRACE [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [1]
+2026-03-28 21:06:06.410 TRACE [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [2]
+2026-03-28 21:06:06.410 TRACE [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (3:BIGINT) <- [4]
+2026-03-28 21:06:06.422 DEBUG [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.SQL - insert into expense (amount,created_at,created_by,deleted_at,description,group_id,paid_by_id,updated_at,updated_by) values (?,?,?,?,?,?,?,?,?)
+2026-03-28 21:06:06.422 TRACE [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:NUMERIC) <- [700.00]
+2026-03-28 21:06:06.423 TRACE [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (2:TIMESTAMP_UTC) <- [2026-03-28T15:36:06.421425800Z]
+2026-03-28 21:06:06.424 TRACE [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (3:BIGINT) <- [1]
+2026-03-28 21:06:06.424 TRACE [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (4:TIMESTAMP_UTC) <- [null]
+2026-03-28 21:06:06.424 TRACE [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (5:VARCHAR) <- [Petrol day 2]
+2026-03-28 21:06:06.424 TRACE [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (6:BIGINT) <- [1]
+2026-03-28 21:06:06.424 TRACE [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (7:BIGINT) <- [1]
+2026-03-28 21:06:06.425 TRACE [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (8:TIMESTAMP_UTC) <- [2026-03-28T15:36:06.421425800Z]
+2026-03-28 21:06:06.425 TRACE [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (9:BIGINT) <- [1]
+2026-03-28 21:06:06.492 INFO  [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= o.a.k.common.config.AbstractConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = splito-producer-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.assertion.algorithm = RS256
+	sasl.oauthbearer.assertion.claim.aud = null
+	sasl.oauthbearer.assertion.claim.exp.seconds = 300
+	sasl.oauthbearer.assertion.claim.iss = null
+	sasl.oauthbearer.assertion.claim.jti.include = false
+	sasl.oauthbearer.assertion.claim.nbf.seconds = 60
+	sasl.oauthbearer.assertion.claim.sub = null
+	sasl.oauthbearer.assertion.file = null
+	sasl.oauthbearer.assertion.private.key.file = null
+	sasl.oauthbearer.assertion.private.key.passphrase = null
+	sasl.oauthbearer.assertion.template.file = null
+	sasl.oauthbearer.client.credentials.client.id = null
+	sasl.oauthbearer.client.credentials.client.secret = null
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.jwt.retriever.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtRetriever
+	sasl.oauthbearer.jwt.validator.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtValidator
+	sasl.oauthbearer.scope = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transaction.two.phase.commit.enable = false
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2026-03-28 21:06:06.554 INFO  [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-03-28 21:06:06.613 INFO  [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= o.a.k.clients.producer.KafkaProducer - [Producer clientId=splito-producer-1] Instantiated an idempotent producer.
+2026-03-28 21:06:06.740 INFO  [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= o.a.kafka.common.utils.AppInfoParser - Kafka version: 4.1.1
+2026-03-28 21:06:06.740 INFO  [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= o.a.kafka.common.utils.AppInfoParser - Kafka commitId: be816b82d25370ce
+2026-03-28 21:06:06.741 INFO  [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1774712166736
+2026-03-28 21:06:07.596 INFO  [kafka-producer-network-thread | splito-producer-1] cid= trace= span= org.apache.kafka.clients.Metadata - [Producer clientId=splito-producer-1] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-03-28 21:06:07.597 INFO  [kafka-producer-network-thread | splito-producer-1] cid= trace= span= o.a.k.c.p.i.TransactionManager - [Producer clientId=splito-producer-1] ProducerId set to 1001 with epoch 0
+2026-03-28 21:06:07.640 DEBUG [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.SQL - insert into expense_split_between (expense_id,split_between_id) values (?,?)
+2026-03-28 21:06:07.641 TRACE [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [7]
+2026-03-28 21:06:07.641 TRACE [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [1]
+2026-03-28 21:06:07.647 DEBUG [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.SQL - insert into expense_split_between (expense_id,split_between_id) values (?,?)
+2026-03-28 21:06:07.648 TRACE [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [7]
+2026-03-28 21:06:07.648 TRACE [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [2]
+2026-03-28 21:06:07.650 DEBUG [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.SQL - insert into expense_split_between (expense_id,split_between_id) values (?,?)
+2026-03-28 21:06:07.650 TRACE [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [7]
+2026-03-28 21:06:07.650 TRACE [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [4]
+2026-03-28 21:06:07.667 ERROR [http-nio-8080-exec-6] cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 trace= span= c.s.exception.GlobalExceptionHandler - Unhandled exception for POST /api/v1/groups/1/expenses
+org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'groupId' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:268)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:123)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:419)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:267)
+	at org.springframework.cache.interceptor.CacheOperationExpressionEvaluator.key(CacheOperationExpressionEvaluator.java:106)
+	at org.springframework.cache.interceptor.CacheAspectSupport$CacheOperationContext.generateKey(CacheAspectSupport.java:950)
+	at org.springframework.cache.interceptor.CacheAspectSupport.generateKey(CacheAspectSupport.java:743)
+	at org.springframework.cache.interceptor.CacheAspectSupport.performCacheEvicts(CacheAspectSupport.java:699)
+	at org.springframework.cache.interceptor.CacheAspectSupport.processCacheEvicts(CacheAspectSupport.java:683)
+	at org.springframework.cache.interceptor.CacheAspectSupport.evaluate(CacheAspectSupport.java:611)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:440)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:404)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.splito.service.ExpenseService$$SpringCGLIB$$0.addExpense(<generated>)
+	at com.splito.controller.ExpenseController.add(ExpenseController.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at com.splito.security.RequestIdFilter.doFilterInternal(RequestIdFilter.java:24)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:493)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:354)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:86)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:132)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at com.splito.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:71)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:337)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at com.splito.observability.HttpLoggingFilter.doFilterInternal(HttpLoggingFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-03-28 21:06:07.693 INFO  [http-nio-8080-exec-6] cid= trace= span= c.s.observability.HttpLoggingFilter - HTTP OUT POST /api/v1/groups/1/expenses status=500 durMs=1588 cid=c30c1aea-f18c-4a92-ac9a-d61cc747cee4 body={"error":"Internal Server Error","message":"EL1007E: Property or field 'groupId' cannot be found on null","path":"/api/v1/groups/1/expenses","status":500,"timestamp":"2026-03-28T21:06:07.6779042"}
+2026-03-28 21:14:14.202 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-28 21:14:14.353 INFO  [tomcat-shutdown] cid= trace= span= o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-28 21:14:14.367 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.a.k.clients.producer.KafkaProducer - [Producer clientId=splito-producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2026-03-28 21:14:14.382 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-03-28 21:14:14.382 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-03-28 21:14:14.383 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2026-03-28 21:14:14.383 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-03-28 21:14:14.385 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for splito-producer-1 unregistered
+2026-03-28 21:14:14.410 INFO  [SpringApplicationShutdownHook] cid= trace= span= o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-28 21:14:14.414 INFO  [SpringApplicationShutdownHook] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-28 21:14:14.430 INFO  [SpringApplicationShutdownHook] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-28 21:14:22.219 INFO  [main] cid= trace= span= com.splito.SplitoApplication - Starting SplitoApplication using Java 17.0.12 with PID 16056 (C:\Users\shrav\Documents\AB - Spring Boot\splito\splito-parent\splito\target\classes started by shrav in C:\Users\shrav\Documents\AB - Spring Boot\splito\splito-parent\splito)
+2026-03-28 21:14:22.227 INFO  [main] cid= trace= span= com.splito.SplitoApplication - The following 1 profile is active: "dev"
+2026-03-28 21:14:23.249 INFO  [background-preinit] cid= trace= span= o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-03-28 21:14:25.002 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-28 21:14:25.005 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-28 21:14:25.411 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 384 ms. Found 7 JPA repository interfaces.
+2026-03-28 21:14:25.466 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-28 21:14:25.469 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-03-28 21:14:25.530 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.DirectGroupPairRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 21:14:25.535 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.ExpenseRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 21:14:25.536 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.GroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 21:14:25.536 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.PasswordResetTokenRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 21:14:25.541 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.RefreshTokenRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 21:14:25.544 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.SettlementRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 21:14:25.547 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.splito.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-03-28 21:14:25.547 INFO  [main] cid= trace= span= o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 0 Redis repository interfaces.
+2026-03-28 21:14:27.966 INFO  [main] cid= trace= span= o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-28 21:14:27.992 INFO  [main] cid= trace= span= o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-28 21:14:28.000 INFO  [main] cid= trace= span= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-28 21:14:28.002 INFO  [main] cid= trace= span= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-03-28 21:14:28.188 INFO  [main] cid= trace= span= o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 5748 ms
+2026-03-28 21:14:28.779 INFO  [main] cid= trace= span= org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-28 21:14:28.897 INFO  [main] cid= trace= span= org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-03-28 21:14:30.006 INFO  [main] cid= trace= span= o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-28 21:14:30.301 INFO  [main] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-28 21:14:30.751 INFO  [main] cid= trace= span= com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6672b0ea
+2026-03-28 21:14:30.755 INFO  [main] cid= trace= span= com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-28 21:14:30.935 INFO  [main] cid= trace= span= o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/splito]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.1
+	Default catalog/schema: splito/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-28 21:14:33.618 INFO  [main] cid= trace= span= org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-28 21:14:33.632 INFO  [main] cid= trace= span= o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-28 21:14:33.827 INFO  [main] cid= trace= span= o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-28 21:14:34.881 INFO  [main] cid= trace= span= org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/splito (PostgreSQL 18.1)
+2026-03-28 21:14:35.004 INFO  [main] cid= trace= span= o.f.core.internal.command.DbValidate - Successfully validated 7 migrations (execution time 00:00.073s)
+2026-03-28 21:14:35.030 INFO  [main] cid= trace= span= o.f.core.internal.command.DbMigrate - Current version of schema "public": 7
+2026-03-28 21:14:35.037 INFO  [main] cid= trace= span= o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2026-03-28 21:14:38.259 WARN  [main] cid= trace= span= o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-28 21:14:38.603 INFO  [main] cid= trace= span= o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-03-28 21:14:40.031 INFO  [main] cid= trace= span= o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-03-28 21:14:41.450 INFO  [main] cid= trace= span= o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-28 21:14:41.498 INFO  [main] cid= trace= span= o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-28 21:14:41.541 INFO  [main] cid= trace= span= com.splito.SplitoApplication - Started SplitoApplication in 20.719 seconds (process running for 21.922)
+2026-03-28 21:14:41.650 WARN  [main] cid= trace= span= o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-28 21:14:41.650 WARN  [main] cid= trace= span= o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-03-28 21:15:03.858 INFO  [http-nio-8080-exec-1] cid= trace= span= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-28 21:15:03.859 INFO  [http-nio-8080-exec-1] cid= trace= span= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-28 21:15:03.864 INFO  [http-nio-8080-exec-1] cid= trace= span= o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2026-03-28 21:15:03.902 INFO  [http-nio-8080-exec-1] cid=6df458d0-b9f9-4b30-8897-e7cfce74c4d2 trace= span= c.s.observability.HttpLoggingFilter - HTTP IN  POST /api/v1/auth/login user=anonymous cid=6df458d0-b9f9-4b30-8897-e7cfce74c4d2 headers={Content-Type=application/json, User-Agent=PostmanRuntime/7.51.1, Accept=*/*, Cache-Control=no-cache, Postman-Token=bfec5094-a1ca-41d8-b9fc-695b8958a9cb, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Connection=keep-alive, Content-Length=68} body=
+2026-03-28 21:15:03.934 WARN  [http-nio-8080-exec-1] cid=6df458d0-b9f9-4b30-8897-e7cfce74c4d2 trace= span= o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/v1/auth/login' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-03-28 21:15:04.559 INFO  [http-nio-8080-exec-1] cid=6df458d0-b9f9-4b30-8897-e7cfce74c4d2 trace= span= com.splito.service.AuthService - AUTH_LOGIN_START email=s***@test.com device=PostmanRuntime/7.51.1 | ip=0:0:0:0:0:0:0:1
+2026-03-28 21:15:04.809 DEBUG [http-nio-8080-exec-1] cid=6df458d0-b9f9-4b30-8897-e7cfce74c4d2 trace= span= org.hibernate.SQL - select su1_0.id,su1_0.created_at,su1_0.created_by,su1_0.deleted_at,su1_0.email,su1_0.name,su1_0.password,su1_0.phone,su1_0.updated_at,su1_0.updated_by from splito_user su1_0 where (su1_0.deleted_at IS NULL) and su1_0.email=?
+2026-03-28 21:15:04.811 TRACE [http-nio-8080-exec-1] cid=6df458d0-b9f9-4b30-8897-e7cfce74c4d2 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [shravan@test.com]
+2026-03-28 21:15:05.110 INFO  [http-nio-8080-exec-1] cid=6df458d0-b9f9-4b30-8897-e7cfce74c4d2 trace= span= com.splito.service.AuthService - AUTH_LOGIN_PASSWORD_OK userId=1 email=s***@test.com
+2026-03-28 21:15:05.582 DEBUG [http-nio-8080-exec-1] cid=6df458d0-b9f9-4b30-8897-e7cfce74c4d2 trace= span= org.hibernate.SQL - insert into refresh_token (created_at,created_by,deleted_at,device,expires_at,revoked_at,token_hash,updated_at,updated_by,user_id) values (?,?,?,?,?,?,?,?,?,?)
+2026-03-28 21:15:05.587 TRACE [http-nio-8080-exec-1] cid=6df458d0-b9f9-4b30-8897-e7cfce74c4d2 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:TIMESTAMP_UTC) <- [2026-03-28T15:45:05.535663600Z]
+2026-03-28 21:15:05.589 TRACE [http-nio-8080-exec-1] cid=6df458d0-b9f9-4b30-8897-e7cfce74c4d2 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [null]
+2026-03-28 21:15:05.590 TRACE [http-nio-8080-exec-1] cid=6df458d0-b9f9-4b30-8897-e7cfce74c4d2 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (3:TIMESTAMP_UTC) <- [null]
+2026-03-28 21:15:05.590 TRACE [http-nio-8080-exec-1] cid=6df458d0-b9f9-4b30-8897-e7cfce74c4d2 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (4:VARCHAR) <- [PostmanRuntime/7.51.1 | ip=0:0:0:0:0:0:0:1]
+2026-03-28 21:15:05.591 TRACE [http-nio-8080-exec-1] cid=6df458d0-b9f9-4b30-8897-e7cfce74c4d2 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (5:TIMESTAMP_UTC) <- [2026-04-27T15:45:05.462019600Z]
+2026-03-28 21:15:05.591 TRACE [http-nio-8080-exec-1] cid=6df458d0-b9f9-4b30-8897-e7cfce74c4d2 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (6:TIMESTAMP_UTC) <- [null]
+2026-03-28 21:15:05.595 TRACE [http-nio-8080-exec-1] cid=6df458d0-b9f9-4b30-8897-e7cfce74c4d2 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (7:VARCHAR) <- [f504641d6b0f7021a7cfd2ae1490524b31d97dbefa7184eccc2f85dd054fcb6f]
+2026-03-28 21:15:05.598 TRACE [http-nio-8080-exec-1] cid=6df458d0-b9f9-4b30-8897-e7cfce74c4d2 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (8:TIMESTAMP_UTC) <- [2026-03-28T15:45:05.535663600Z]
+2026-03-28 21:15:05.599 TRACE [http-nio-8080-exec-1] cid=6df458d0-b9f9-4b30-8897-e7cfce74c4d2 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (9:BIGINT) <- [null]
+2026-03-28 21:15:05.600 TRACE [http-nio-8080-exec-1] cid=6df458d0-b9f9-4b30-8897-e7cfce74c4d2 trace= span= org.hibernate.orm.jdbc.bind - binding parameter (10:BIGINT) <- [1]
+2026-03-28 21:15:05.640 INFO  [http-nio-8080-exec-1] cid=6df458d0-b9f9-4b30-8897-e7cfce74c4d2 trace= span= com.splito.service.AuthService - AUTH_LOGIN_REFRESH_TOKEN_ISSUED userId=1 device=PostmanRuntime/7.51.1 | ip=0:0:0:0:0:0:0:1 refreshTokenId=42
+2026-03-28 21:15:05.640 INFO  [http-nio-8080-exec-1] cid=6df458d0-b9f9-4b30-8897-e7cfce74c4d2 trace= span= com.splito.service.AuthService - AUTH_LOGIN_SUCCESS userId=1
+2026-03-28 21:15:05.810 INFO  [http-nio-8080-exec-1] cid= trace= span= c.s.observability.HttpLoggingFilter - HTTP OUT POST /api/v1/auth/login status=200 durMs=1903 cid=6df458d0-b9f9-4b30-8897-e7cfce74c4d2 body={"accessToken":"***","refreshToken":"***"}
+2026-03-28 21:15:07.579 INFO  [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= c.s.observability.HttpLoggingFilter - HTTP IN  POST /api/v1/groups/1/expenses user=anonymous cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f headers={Content-Type=application/json, Authorization=***, User-Agent=PostmanRuntime/7.51.1, Accept=*/*, Cache-Control=no-cache, Postman-Token=e11b1420-e3de-41fb-89e6-dcf3ae8ebb8a, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Connection=keep-alive, Content-Length=123} body=
+2026-03-28 21:15:07.703 DEBUG [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.SQL - select su1_0.id,su1_0.created_at,su1_0.created_by,su1_0.deleted_at,su1_0.email,su1_0.name,su1_0.password,su1_0.phone,su1_0.updated_at,su1_0.updated_by from splito_user su1_0 where (su1_0.deleted_at IS NULL) and su1_0.email=?
+2026-03-28 21:15:07.703 TRACE [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [shravan@test.com]
+2026-03-28 21:15:07.803 DEBUG [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.SQL - select sg1_0.id,sg1_0.created_at,sg1_0.created_by,sg1_0.deleted_at,sg1_0.is_direct,sg1_0.name,sg1_0.updated_at,sg1_0.updated_by from splito_group sg1_0 where sg1_0.id=? and (sg1_0.deleted_at IS NULL)
+2026-03-28 21:15:07.804 TRACE [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [1]
+2026-03-28 21:15:07.846 DEBUG [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.SQL - select m1_0.splito_group_id,m1_1.id,m1_1.created_at,m1_1.created_by,m1_1.deleted_at,m1_1.email,m1_1.name,m1_1.password,m1_1.phone,m1_1.updated_at,m1_1.updated_by from splito_group_members m1_0 join splito_user m1_1 on m1_1.id=m1_0.members_id where m1_0.splito_group_id=? and ( m1_1.deleted_at IS NULL)
+2026-03-28 21:15:07.847 TRACE [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [1]
+2026-03-28 21:15:07.923 DEBUG [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.SQL - select su1_0.id,su1_0.created_at,su1_0.created_by,su1_0.deleted_at,su1_0.email,su1_0.name,su1_0.password,su1_0.phone,su1_0.updated_at,su1_0.updated_by from splito_user su1_0 where (su1_0.deleted_at IS NULL) and su1_0.id in (?,?,?)
+2026-03-28 21:15:07.924 TRACE [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [1]
+2026-03-28 21:15:07.924 TRACE [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [2]
+2026-03-28 21:15:07.924 TRACE [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (3:BIGINT) <- [4]
+2026-03-28 21:15:07.941 DEBUG [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.SQL - insert into expense (amount,created_at,created_by,deleted_at,description,group_id,paid_by_id,updated_at,updated_by) values (?,?,?,?,?,?,?,?,?)
+2026-03-28 21:15:07.941 TRACE [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:NUMERIC) <- [700.00]
+2026-03-28 21:15:07.945 TRACE [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (2:TIMESTAMP_UTC) <- [2026-03-28T15:45:07.939342200Z]
+2026-03-28 21:15:07.946 TRACE [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (3:BIGINT) <- [1]
+2026-03-28 21:15:07.947 TRACE [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (4:TIMESTAMP_UTC) <- [null]
+2026-03-28 21:15:07.947 TRACE [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (5:VARCHAR) <- [Petrol day 2]
+2026-03-28 21:15:07.947 TRACE [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (6:BIGINT) <- [1]
+2026-03-28 21:15:07.947 TRACE [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (7:BIGINT) <- [1]
+2026-03-28 21:15:07.947 TRACE [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (8:TIMESTAMP_UTC) <- [2026-03-28T15:45:07.939342200Z]
+2026-03-28 21:15:07.948 TRACE [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (9:BIGINT) <- [1]
+2026-03-28 21:15:08.017 INFO  [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= o.a.k.common.config.AbstractConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = splito-producer-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.assertion.algorithm = RS256
+	sasl.oauthbearer.assertion.claim.aud = null
+	sasl.oauthbearer.assertion.claim.exp.seconds = 300
+	sasl.oauthbearer.assertion.claim.iss = null
+	sasl.oauthbearer.assertion.claim.jti.include = false
+	sasl.oauthbearer.assertion.claim.nbf.seconds = 60
+	sasl.oauthbearer.assertion.claim.sub = null
+	sasl.oauthbearer.assertion.file = null
+	sasl.oauthbearer.assertion.private.key.file = null
+	sasl.oauthbearer.assertion.private.key.passphrase = null
+	sasl.oauthbearer.assertion.template.file = null
+	sasl.oauthbearer.client.credentials.client.id = null
+	sasl.oauthbearer.client.credentials.client.secret = null
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.jwt.retriever.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtRetriever
+	sasl.oauthbearer.jwt.validator.class = class org.apache.kafka.common.security.oauthbearer.DefaultJwtValidator
+	sasl.oauthbearer.scope = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transaction.two.phase.commit.enable = false
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2026-03-28 21:15:08.082 INFO  [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2026-03-28 21:15:08.131 INFO  [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= o.a.k.clients.producer.KafkaProducer - [Producer clientId=splito-producer-1] Instantiated an idempotent producer.
+2026-03-28 21:15:08.217 INFO  [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= o.a.kafka.common.utils.AppInfoParser - Kafka version: 4.1.1
+2026-03-28 21:15:08.217 INFO  [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= o.a.kafka.common.utils.AppInfoParser - Kafka commitId: be816b82d25370ce
+2026-03-28 21:15:08.217 INFO  [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1774712708213
+2026-03-28 21:15:09.066 INFO  [kafka-producer-network-thread | splito-producer-1] cid= trace= span= org.apache.kafka.clients.Metadata - [Producer clientId=splito-producer-1] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2026-03-28 21:15:09.067 INFO  [kafka-producer-network-thread | splito-producer-1] cid= trace= span= o.a.k.c.p.i.TransactionManager - [Producer clientId=splito-producer-1] ProducerId set to 1002 with epoch 0
+2026-03-28 21:15:09.115 DEBUG [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.SQL - insert into expense_split_between (expense_id,split_between_id) values (?,?)
+2026-03-28 21:15:09.115 TRACE [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [8]
+2026-03-28 21:15:09.116 TRACE [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [1]
+2026-03-28 21:15:09.121 DEBUG [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.SQL - insert into expense_split_between (expense_id,split_between_id) values (?,?)
+2026-03-28 21:15:09.121 TRACE [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [8]
+2026-03-28 21:15:09.121 TRACE [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [2]
+2026-03-28 21:15:09.122 DEBUG [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.SQL - insert into expense_split_between (expense_id,split_between_id) values (?,?)
+2026-03-28 21:15:09.123 TRACE [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [8]
+2026-03-28 21:15:09.124 TRACE [http-nio-8080-exec-3] cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f trace= span= org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [4]
+2026-03-28 21:15:10.046 INFO  [http-nio-8080-exec-3] cid= trace= span= c.s.observability.HttpLoggingFilter - HTTP OUT POST /api/v1/groups/1/expenses status=200 durMs=2463 cid=dac72f1b-dea1-4a0e-83ac-572d9be99e7f body={"id":8,"description":"Petrol day 2","amount":700.0,"groupId":1,"paidByUserId":1,"splitBetweenUserIds":[1,2,4],"createdAt":"2026-03-28T15:45:07.939342200Z"}
+2026-03-28 22:04:20.307 WARN  [HikariPool-1:housekeeper] cid= trace= span= com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m49s237ms531µs400ns).

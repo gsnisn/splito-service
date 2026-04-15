@@ -1,0 +1,53 @@
+spring:
+  application:
+    name: splito
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+  flyway:
+    enabled: true
+
+logging:
+  level:
+    root: INFO
+
+app:
+  logging:
+    http:
+      enabled: true
+      include-headers: false
+      include-body: false
+      max-body-bytes: 4096
+      correlation-header: X-Correlation-Id
+      exclude-paths:
+        - /actuator
+        - /v3/api-docs
+        - /swagger-ui
+      mask:
+        headers:
+          - Authorization
+          - Cookie
+          - Set-Cookie
+        json-fields:
+          - password
+          - newPassword
+          - refreshToken
+          - token
+          - accessToken
+          - secret
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
+      db:
+        enabled: true
+      redis:
+        enabled: false
+      probes:
+        enabled: true

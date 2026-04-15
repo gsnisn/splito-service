@@ -1,0 +1,62 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/splito}
+    username: ${SPRING_DATASOURCE_USERNAME:postgres}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  security:
+    jwt:
+      secret: ${JWT_SECRET:ANYTHING_THAT_IS_64_CHARACTERS_LONG_ANYTHING_ANYTHING__ANYTHING_}
+      access-ttl-minutes: ${ACCESS_TTL_MINUTES:15}
+      refresh-ttl-days: ${REFRESH_TTL_DAYS:30}
+      reset-ttl-minutes: ${JWT_RESET_TTL_MINUTES:15}
+
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      timeout: 2s
+
+  cache:
+    type: redis
+    cache-names:
+      - users
+      - groups
+      - groupBalances
+      - userList
+      - groupList
+    redis:
+      time-to-live: 10m
+      cache-null-values: false
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+# Custom redis flag - when this property is false or missing (in memory cache) is used
+# otherwise redis cache is used (as configured)
+redis:
+  enabled: true
+
+app:
+  kafka:
+    topics:
+      expense-created: expense-created
+      group-created: group-created
+
+  logging:
+    http:
+      include-headers: true
+      include-body: true
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.orm.jdbc.bind: TRACE

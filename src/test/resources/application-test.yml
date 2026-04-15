@@ -1,0 +1,16 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+  security:
+    jwt:
+      secret: test-secret-key-12345678901234567890123456789012
+      access-ttl-minutes: 15
+      refresh-ttl-days: 7
+      reset-ttl-minutes: 10
+
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.jdbc.autoconfigure.DataSourceAutoConfiguration
+      - org.springframework.boot.orm.jpa.autoconfigure.HibernateJpaAutoConfiguration
+      - org.springframework.boot.flyway.autoconfigure.FlywayAutoConfiguration
