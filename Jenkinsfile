@@ -17,9 +17,14 @@ pipeline {
             steps {
                 script {
                     VERSION = sh(
-                        script: "mvn help:evaluate -Dexpression=project.version -q -DforceStdout",
+                        script: "mvn help:evaluate -Dexpression=project.version -q -DforceStdout | grep -v '\\[INFO\\]'",
                         returnStdout: true
                     ).trim()
+
+                    if (!VERSION) {
+                        error("VERSION is empty! Check pom.xml")
+                    }
+
                     echo "Project version: ${VERSION}"
                 }
             }
