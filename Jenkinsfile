@@ -9,13 +9,6 @@ pipeline {
     }
 
     stages {
-
-        stage('Checkout') {
-            steps {
-                git branch: 'main',
-                    url: 'git@github.com:gsnisn/splito-service.git'
-            }
-        }
 		
 		stage('Build splito-events') {
 			steps {
