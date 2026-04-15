@@ -12,6 +12,7 @@
 
 	<groupId>com.splito</groupId>
 	<artifactId>splito</artifactId>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 	<name>splito</name>
 	<description>Splito main service</description>
