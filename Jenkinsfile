@@ -8,11 +8,22 @@ pipeline {
     environment {
         AWS_REGION = 'ap-south-1'
         ECR_REPO = 'splito'
-        IMAGE_TAG = "${BUILD_NUMBER}"
         AWS_ACCOUNT_ID = '712163226335'
     }
 
     stages {
+
+        stage('Get Version') {
+            steps {
+                script {
+                    VERSION = sh(
+                        script: "mvn help:evaluate -Dexpression=project.version -q -DforceStdout",
+                        returnStdout: true
+                    ).trim()
+                    echo "Project version: ${VERSION}"
+                }
+            }
+        }
 
         stage('Build splito-events') {
             steps {
@@ -33,7 +44,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t $ECR_REPO:$IMAGE_TAG .'
+                sh 'docker build -t $ECR_REPO:$VERSION .'
             }
         }
 
@@ -48,19 +59,36 @@ pipeline {
             }
         }
 
-        stage('Tag Image') {
+        stage('Tag Versioned Image') {
             steps {
                 sh '''
-                docker tag $ECR_REPO:$IMAGE_TAG \
-                $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPO:$IMAGE_TAG
+                docker tag $ECR_REPO:$VERSION \
+                $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPO:$VERSION
                 '''
             }
         }
 
-        stage('Push to ECR') {
+        stage('Push Versioned Image') {
             steps {
                 sh '''
-                docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPO:$IMAGE_TAG
+                docker push $AWS_ACCOUNT_ID.dkr.ecr.ap-south-1.amazonaws.com/$ECR_REPO:$VERSION
+                '''
+            }
+        }
+
+        stage('Tag Latest') {
+            steps {
+                sh '''
+                docker tag $ECR_REPO:$VERSION \
+                $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPO:latest
+                '''
+            }
+        }
+
+        stage('Push Latest') {
+            steps {
+                sh '''
+                docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPO:latest
                 '''
             }
         }
